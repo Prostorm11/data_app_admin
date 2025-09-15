@@ -2,7 +2,7 @@
 
 :root {
   /* Backgrounds */
-  --background: linear-gradient(135deg, #fefae0, #f7eb9e);
+  --background: linear-gradient(90deg, #fefae0, #f7eb9e,#fae870);
   --card-background: #ffffff;
   --border-color: #e5e7eb;
 
@@ -32,7 +32,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Backgrounds */
-    --background: linear-gradient(135deg, #1f2937, #111827);
+    --background: linear-gradient(90deg, #636e7e, #30394d,#1f293d);
     --card-background: #1e293b;
     --border-color: #4b5563;
 

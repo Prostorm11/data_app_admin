@@ -1,0 +1,18 @@
+.CustomButton {
+    border-radius: 30px;
+    button{
+       /*  background-color: #fbbf24; */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px;
+        /* color: white; */
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        flex: 1;
+        
+    }
+
+    
+}
