@@ -1,18 +1,37 @@
 .CustomButton {
-    border-radius: 30px;
-    button{
-       /*  background-color: #fbbf24; */
-        border: none;
-        padding: 10px 20px;
-        border-radius: 30px;
-        /* color: white; */
-        font-weight: 600;
-        cursor: pointer;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-        flex: 1;
-        
-    }
+  border-radius: 30px;
+  flex: 1; /* ensure it can grow inside a flex container */
+}
 
-    
+.CustomButton button {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  width: 100%; /* fill the parent flex */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .CustomButton button {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .CustomButton button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .CustomButton button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
 }

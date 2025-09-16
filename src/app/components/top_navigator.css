@@ -1,13 +1,40 @@
 .main_board {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
-    height: 12%;
-    width: 50%;
-    background-color: red;
-    align-items: center;
-    padding: 10px;
-    border-radius: 30px;
-    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 12%;
+  width: 50%;
+  background-color: red;
+  padding: 10px;
+  border-radius: 30px;
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+/* Medium screens */
+@media (max-width: 1024px) {
+  .main_board {
+    width: 70%;
+    height: 14%;
+    padding: 8px;
+  }
+}
+
+/* Small screens (tablet / mobile) */
+@media (max-width: 768px) {
+  .main_board {
+    width: 90%;
+    height: auto; /* let height adjust automatically */
+    flex-direction: column; /* stack buttons vertically */
+    padding: 12px;
+  }
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 480px) {
+  .main_board {
+    width: 95%;
+    padding: 8px;
+    border-radius: 20px;
+  }
 }
